@@ -151,8 +151,7 @@ Ensure the "Twitter" sign-in provider is enabled on the [Firebase Console](https
 Before triggering a sign-in request, you must initialize the Twitter SDK using your accounts consumer key & secret:
 
 ```js
-import { NativeModules } from 'react-native';
-const { RNTwitterSignIn } = NativeModules;
+import RNTwitterSignIn from '@react-native-twitter-signin/twitter-signin';
 
 RNTwitterSignIn.init('TWITTER_CONSUMER_KEY', 'TWITTER_CONSUMER_SECRET').then(() =>
   console.log('Twitter SDK initialized'),
